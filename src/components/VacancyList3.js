@@ -204,10 +204,7 @@ const VacancyList = ({ data }) => {
         <div>{renderElement}</div>
         <div>{renderTools}</div>
       </div>
-      <div className="main-block">
-        <p>hui</p>
-        {renderVacancyList}
-      </div>
+      <div className="main-block">{renderVacancyList}</div>
     </Fragment>
   );
 };
