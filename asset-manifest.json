@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/FAQ-Accordion-Card-React/static/css/main.f86dcc50.chunk.css",
+    "main.js": "/FAQ-Accordion-Card-React/static/js/main.d647a6a7.chunk.js",
+    "main.js.map": "/FAQ-Accordion-Card-React/static/js/main.d647a6a7.chunk.js.map",
+    "runtime-main.js": "/FAQ-Accordion-Card-React/static/js/runtime-main.a07a3c41.js",
+    "runtime-main.js.map": "/FAQ-Accordion-Card-React/static/js/runtime-main.a07a3c41.js.map",
+    "static/js/2.3d9e18a1.chunk.js": "/FAQ-Accordion-Card-React/static/js/2.3d9e18a1.chunk.js",
+    "static/js/2.3d9e18a1.chunk.js.map": "/FAQ-Accordion-Card-React/static/js/2.3d9e18a1.chunk.js.map",
+    "index.html": "/FAQ-Accordion-Card-React/index.html",
+    "static/css/main.f86dcc50.chunk.css.map": "/FAQ-Accordion-Card-React/static/css/main.f86dcc50.chunk.css.map",
+    "static/js/2.3d9e18a1.chunk.js.LICENSE.txt": "/FAQ-Accordion-Card-React/static/js/2.3d9e18a1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a07a3c41.js",
+    "static/js/2.3d9e18a1.chunk.js",
+    "static/css/main.f86dcc50.chunk.css",
+    "static/js/main.d647a6a7.chunk.js"
+  ]
+}
