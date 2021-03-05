@@ -1,17 +1,22 @@
-import React from "react";
-import VacancyList from "./VacancyList3";
-
+import React, { useState } from "react";
+import JobsList from "./JobsList";
+import FilterPanel from "./FilterPanel";
+import Attribution from "./Attribution";
 import data from "../data.json";
 
 const App = () => {
-  // console.log(data);
+  const [selected, setSelected] = useState({
+    roles: [],
+    levels: [],
+    languages: [],
+    tools: [],
+  });
   return (
-    <div className="container">
-      {/* Фильтр панель нужно будет вытащить из VacancyList как отдельный компонент */}
-      {/* <div className="filter-panel" id="filter-panel"></div> */}
-      <VacancyList data={data} />
-
-      <p>APP</p>
+    <div>
+      {/* Если селектед пуст - не отображать панель */}
+      <FilterPanel selected={selected} setSelected={setSelected} />
+      <JobsList data={data} selected={selected} setSelected={setSelected} />
+      <Attribution />
     </div>
   );
 };

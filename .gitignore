@@ -24,3 +24,5 @@ yarn-error.log*
 
 /src/components/VacancyList.js
 /src/components/VacancyList2.js
+/src/components/OffersList2.js
+/src/style.css

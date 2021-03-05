@@ -17,3 +17,12 @@ TODO:
 - Testing with Cypress, also CI with Cypress would be good https://docs.cypress.io/guides/guides/continuous-integration.html#Setting-up-CI
 - Unit testing?
 - Maybe put data on firebase and make api requests, just for practise?
+
+! Пришлось json отредактировать url к svg - убрать точку в начале.
+Переместить images в public
+и вызывать картинки вот так
+<img src={process.env.PUBLIC_URL + logo} />
+
+https://create-react-app.dev/docs/using-the-public-folder/
+
+https://forum.freecodecamp.org/t/display-image-from-local-json-js-object-using-react/408351/7

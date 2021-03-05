@@ -1,6 +1,6 @@
 import React from "react";
 
-const JobsList = ({ data }) => {
+const JobsList = ({ data, setSelected, selected }) => {
   // TODO: Элемент в отдельный компонент JobElement
   const renderJobsList = data.map((job) => {
     const {
@@ -28,7 +28,11 @@ const JobsList = ({ data }) => {
       >
         <div className="flex flex-col sm:flex-row my-6">
           <div className="ml-6 flex-shrink-0 w-16 sm:w-auto -mt-14 mb-4 sm:mb-0 sm:mt-0">
-            <img src={logo} alt={`${company} company logo`} />
+            {/* https://create-react-app.dev/docs/using-the-public-folder/ */}
+            <img
+              src={process.env.PUBLIC_URL + logo}
+              alt={`${company} company logo`}
+            />
           </div>
 
           <div className="ml-6">
@@ -73,19 +77,39 @@ const JobsList = ({ data }) => {
         <div className="mt-6 ml-6">
           <ul className="flex flex-wrap">
             <li>
-              <button className="font-bold bg-neutral-200 rounded-md hover:bg-primary hover:text-white mr-4 mb-4 p-2 text-primary">
+              <button
+                onClick={() => {
+                  setSelected({ ...selected, roles: [role] });
+                }}
+                className="font-bold bg-neutral-200 rounded-md hover:bg-primary hover:text-white mr-4 mb-4 p-2 text-primary"
+              >
                 {role}
               </button>
             </li>
             <li>
-              <button className="font-bold bg-neutral-200 rounded-md hover:bg-primary hover:text-white mr-4 mb-4 p-2 text-primary">
+              <button
+                onClick={() => {
+                  setSelected({ ...selected, levels: [level] });
+                }}
+                className="font-bold bg-neutral-200 rounded-md hover:bg-primary hover:text-white mr-4 mb-4 p-2 text-primary"
+              >
                 {level}
               </button>
             </li>
             {languages.map((language) => {
               return (
                 <li key={language}>
-                  <button className="font-bold bg-neutral-200 rounded-md hover:bg-primary hover:text-white mr-4 mb-4 p-2 text-primary">
+                  <button
+                    onClick={() => {
+                      if (!selected.languages.includes(language)) {
+                        setSelected({
+                          ...selected,
+                          languages: [...selected.languages, language],
+                        });
+                      }
+                    }}
+                    className="font-bold bg-neutral-200 rounded-md hover:bg-primary hover:text-white mr-4 mb-4 p-2 text-primary"
+                  >
                     {language}
                   </button>
                 </li>
@@ -94,7 +118,17 @@ const JobsList = ({ data }) => {
             {tools.map((tool) => {
               return (
                 <li key={tool}>
-                  <button className="font-bold bg-neutral-200 rounded-md hover:bg-primary hover:text-white mr-4 mb-4 p-2 text-primary">
+                  <button
+                    onClick={() => {
+                      if (!selected.tools.includes(tool)) {
+                        setSelected({
+                          ...selected,
+                          tools: [...selected.tools, tool],
+                        });
+                      }
+                    }}
+                    className="font-bold bg-neutral-200 rounded-md hover:bg-primary hover:text-white mr-4 mb-4 p-2 text-primary"
+                  >
                     {tool}
                   </button>
                 </li>
