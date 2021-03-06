@@ -1,20 +1,25 @@
 import React, { useState } from "react";
 import JobsList from "./JobsList";
-import FilterPanel from "./FilterPanel";
+import Header from "./Header";
 import Attribution from "./Attribution";
 import data from "../data.json";
 
 const App = () => {
-  const [selected, setSelected] = useState({
+  const selectedFilters = {
     roles: [],
     levels: [],
     languages: [],
     tools: [],
-  });
+  };
+
+  const [selected, setSelected] = useState(selectedFilters);
   return (
     <div>
-      {/* Если селектед пуст - не отображать панель */}
-      <FilterPanel selected={selected} setSelected={setSelected} />
+      <Header
+        selected={selected}
+        setSelected={setSelected}
+        selectedFilters={selectedFilters}
+      />
       <JobsList data={data} selected={selected} setSelected={setSelected} />
       <Attribution />
     </div>

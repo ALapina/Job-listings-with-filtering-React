@@ -1,28 +1,33 @@
-# Job listings with filtering - React
+# 🚚 Job listings with filtering - React
 
-**WORK IN PROGRESS!!!!!!!**
+![Design preview for the Job Listings coding challenge](./design/desktop-preview.jpg)
 
-Live: https://alapina.github.io/Job-listings-with-filtering-React
+## Welcome! 👋
 
-There is still a LOT of work to do! But for now main React logic is done! Just need to clean my code and think on optimization and ask for code review
+This is my solution for [Frontend Mentor](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt) challenge.
 
-Challenge: https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt
+## 🔗 Live Link / Demo Link:
 
-Example how it must work: https://bobmatyas.github.io/fm-filter-list/
+- https://alapina.github.io/Job-listings-with-filtering-React
 
-TODO:
+- Link to Vanilla Solution
+  - [JS Vanilla version](https://github.com/ALapina/Job-listings-with-filtering-JavaScript)
 
-- Refactoring, optimization. Probably need to do something with filter panel (Object.entries.map https://stackoverflow.com/questions/46187518/object-entries-map-to-render-react-components-array )
-- Styling and structuring
+## 🛠 Technologies Used:
+
+- Accessible
+- CSS Tailwind ❤️
+- React.js with hooks
+- Responsive design
+
+## 🐢 TODO:
+
 - Testing with Cypress, also CI with Cypress would be good https://docs.cypress.io/guides/guides/continuous-integration.html#Setting-up-CI
-- Unit testing?
-- Maybe put data on firebase and make api requests, just for practise?
+- Unit testing
 
-! Пришлось json отредактировать url к svg - убрать точку в начале.
-Переместить images в public
-и вызывать картинки вот так
-<img src={process.env.PUBLIC_URL + logo} />
+## 📚 Challenging parts:
 
-https://create-react-app.dev/docs/using-the-public-folder/
-
-https://forum.freecodecamp.org/t/display-image-from-local-json-js-object-using-react/408351/7
+1. In data.json there is element logo which contains path to the local file with svg image. But it's local url path and react don't want to render svg image from local file. So my solution - put image folder in public folder, edit data.json (remove first dot in every url) and add `process.env.PUBLIC_URL` to create correct absolute path to the svg image.
+   - Example:`<img src={process.env.PUBLIC_URL + logo} />`
+   - https://create-react-app.dev/docs/using-the-public-folder/
+   - Another option is how to solve the problem with displaying a local svg image in react: https://forum.freecodecamp.org/t/display-image-from-local-json-js-object-using-react/408351/7

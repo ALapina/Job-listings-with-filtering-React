@@ -22,7 +22,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-/src/components/VacancyList.js
-/src/components/VacancyList2.js
-/src/components/OffersList2.js
+src/components/oldComponents/OffersList2.js
+src/components/oldComponents/VacancyList.js
+src/components/oldComponents/VacancyList2.js
+src/components/oldComponents/VacancyItem.js
 /src/style.css
