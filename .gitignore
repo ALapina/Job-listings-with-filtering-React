@@ -26,4 +26,4 @@ src/components/oldComponents/OffersList2.js
 src/components/oldComponents/VacancyList.js
 src/components/oldComponents/VacancyList2.js
 src/components/oldComponents/VacancyItem.js
-/src/style.css
+src/style.css
