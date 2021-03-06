@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Job-listings-with-filtering-React/static/css/main.f86dcc50.chunk.css",
-    "main.js": "/Job-listings-with-filtering-React/static/js/main.d8835aa5.chunk.js",
-    "main.js.map": "/Job-listings-with-filtering-React/static/js/main.d8835aa5.chunk.js.map",
+    "main.css": "/Job-listings-with-filtering-React/static/css/main.d13a6399.chunk.css",
+    "main.js": "/Job-listings-with-filtering-React/static/js/main.942a6a26.chunk.js",
+    "main.js.map": "/Job-listings-with-filtering-React/static/js/main.942a6a26.chunk.js.map",
     "runtime-main.js": "/Job-listings-with-filtering-React/static/js/runtime-main.1020ec37.js",
     "runtime-main.js.map": "/Job-listings-with-filtering-React/static/js/runtime-main.1020ec37.js.map",
-    "static/js/2.3d9e18a1.chunk.js": "/Job-listings-with-filtering-React/static/js/2.3d9e18a1.chunk.js",
-    "static/js/2.3d9e18a1.chunk.js.map": "/Job-listings-with-filtering-React/static/js/2.3d9e18a1.chunk.js.map",
+    "static/js/2.6ef55160.chunk.js": "/Job-listings-with-filtering-React/static/js/2.6ef55160.chunk.js",
+    "static/js/2.6ef55160.chunk.js.map": "/Job-listings-with-filtering-React/static/js/2.6ef55160.chunk.js.map",
     "index.html": "/Job-listings-with-filtering-React/index.html",
-    "static/css/main.f86dcc50.chunk.css.map": "/Job-listings-with-filtering-React/static/css/main.f86dcc50.chunk.css.map",
-    "static/js/2.3d9e18a1.chunk.js.LICENSE.txt": "/Job-listings-with-filtering-React/static/js/2.3d9e18a1.chunk.js.LICENSE.txt"
+    "static/css/main.d13a6399.chunk.css.map": "/Job-listings-with-filtering-React/static/css/main.d13a6399.chunk.css.map",
+    "static/js/2.6ef55160.chunk.js.LICENSE.txt": "/Job-listings-with-filtering-React/static/js/2.6ef55160.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1020ec37.js",
-    "static/js/2.3d9e18a1.chunk.js",
-    "static/css/main.f86dcc50.chunk.css",
-    "static/js/main.d8835aa5.chunk.js"
+    "static/js/2.6ef55160.chunk.js",
+    "static/css/main.d13a6399.chunk.css",
+    "static/js/main.942a6a26.chunk.js"
   ]
 }
