@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Job-listings-with-filtering-React/static/css/main.c44d63cd.chunk.css",
+    "main.css": "/Job-listings-with-filtering-React/static/css/main.d18a70d1.chunk.css",
     "main.js": "/Job-listings-with-filtering-React/static/js/main.942a6a26.chunk.js",
     "main.js.map": "/Job-listings-with-filtering-React/static/js/main.942a6a26.chunk.js.map",
     "runtime-main.js": "/Job-listings-with-filtering-React/static/js/runtime-main.1020ec37.js",
@@ -8,13 +8,13 @@
     "static/js/2.6ef55160.chunk.js": "/Job-listings-with-filtering-React/static/js/2.6ef55160.chunk.js",
     "static/js/2.6ef55160.chunk.js.map": "/Job-listings-with-filtering-React/static/js/2.6ef55160.chunk.js.map",
     "index.html": "/Job-listings-with-filtering-React/index.html",
-    "static/css/main.c44d63cd.chunk.css.map": "/Job-listings-with-filtering-React/static/css/main.c44d63cd.chunk.css.map",
+    "static/css/main.d18a70d1.chunk.css.map": "/Job-listings-with-filtering-React/static/css/main.d18a70d1.chunk.css.map",
     "static/js/2.6ef55160.chunk.js.LICENSE.txt": "/Job-listings-with-filtering-React/static/js/2.6ef55160.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1020ec37.js",
     "static/js/2.6ef55160.chunk.js",
-    "static/css/main.c44d63cd.chunk.css",
+    "static/css/main.d18a70d1.chunk.css",
     "static/js/main.942a6a26.chunk.js"
   ]
 }
