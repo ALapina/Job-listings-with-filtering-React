@@ -2,8 +2,7 @@ import React from "react";
 import FilterPanel from "./FilterPanel";
 
 const Header = ({ selected, setSelected, selectedFilters }) => {
-  const allValues = Object.values(selected);
-  const isSelectedEmpty = allValues.every(
+  const isSelectedEmpty = Object.values(selected).every(
     (currentValue) => currentValue.length === 0
   );
 
@@ -18,14 +17,12 @@ const Header = ({ selected, setSelected, selectedFilters }) => {
           })`,
         }}
       ></div>
-      {!isSelectedEmpty ? (
+      {!isSelectedEmpty && (
         <FilterPanel
           selected={selected}
           setSelected={setSelected}
           selectedFilters={selectedFilters}
         />
-      ) : (
-        ""
       )}
     </header>
   );

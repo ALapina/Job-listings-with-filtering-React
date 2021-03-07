@@ -4,8 +4,8 @@ const FilterPanel = ({ selected, setSelected, selectedFilters }) => {
   const renderSelected = () => {
     const items = [];
     for (const [key, value] of Object.entries(selected)) {
-      value.map((el) => {
-        return items.push(
+      value.forEach((el) => {
+        items.push(
           <li className="bg-neutral-200 rounded-md mr-4 mb-4" key={el}>
             <span className="p-2 text-primary sm:p-3">{el}</span>
             <button
@@ -37,7 +37,6 @@ const FilterPanel = ({ selected, setSelected, selectedFilters }) => {
   return (
     <div className="flex justify-between bg-white rounded-md m-auto -mt-10 max-w-8xl w-11/12 shadow-block">
       <ul className="flex flex-wrap pt-6 pr-6 pl-6">{renderSelected()}</ul>
-      {/* Is there a better way how to clean selected? */}
       <button
         onClick={() => {
           setSelected(selectedFilters);
