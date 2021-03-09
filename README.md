@@ -4,7 +4,7 @@
 
 ## Welcome! 👋
 
-This is my solution to the [Frontend Mentor](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt) challenge.
+This is my solution to the [Job listings with filtering challenge on Frontend Mentor.](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt)
 
 ## 🔗 Live Link / Demo Link:
 
@@ -22,10 +22,6 @@ This is my solution to the [Frontend Mentor](https://www.frontendmentor.io/chall
 - Responsive design
 
 ## 📚 Challenging parts:
-
-1. https://reactjs.org/docs/faq-functions.html#arrow-function-in-render
-   https://reactjs.org/docs/hooks-reference.html#usecallback
-   useCallback
 
 1. In data.json there is element logo which contains path to the local file with svg image. But it's local url path and react don't want to render svg image from local file. So my solution - put image folder in public folder, edit data.json (remove first dot in every url) and add `process.env.PUBLIC_URL` to create correct absolute path to the svg image.
    - Example:`<img src={process.env.PUBLIC_URL + logo} />`
