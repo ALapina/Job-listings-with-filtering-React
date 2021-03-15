@@ -52,16 +52,16 @@ const JobSection = ({ job, setSelected, selected }) => {
             </ul>
           </div>
           <h2 className="text-lg my-2">
-            <a className="hover:text-primary" href="#top">
+            <a className="hover:text-primary" href="#">
               {position}
             </a>
           </h2>
           <div>
             <ul className="flex flex-wrap items-center text-neutral-300 font-medium">
               <li>{postedAt}</li>
-              <span className="h-1 w-1 rounded-full bg-neutral-300 mx-2"></span>
+              <li className="h-1 w-1 rounded-full bg-neutral-300 mx-2"></li>
               <li>{contract}</li>
-              <span className="h-1 w-1 rounded-full bg-neutral-300 mx-2"></span>
+              <li className="h-1 w-1 rounded-full bg-neutral-300 mx-2"></li>
               <li>{location}</li>
             </ul>
           </div>
@@ -136,4 +136,5 @@ const JobSection = ({ job, setSelected, selected }) => {
   );
 };
 
+// https://reactjs.org/docs/react-api.html#reactmemo
 export default JobSection;
