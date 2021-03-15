@@ -15,7 +15,7 @@ This is my solution to the [Job listings with filtering challenge on Frontend Me
 
 ## 🛠 Technologies Used:
 
-- Accessible
+- Accessible HTML
 - CSS Tailwind ❤️
 - React.js with hooks
 - [GitHub action](https://github.com/JamesIves/github-pages-deploy-action) for automatically deploying project to GitHub pages.
@@ -31,5 +31,3 @@ This is my solution to the [Job listings with filtering challenge on Frontend Me
 ## 🐢 Stuff I would like to add later:
 
 - Testing with Cypress, also maybe add Cypress to CI with Github actions https://docs.cypress.io/guides/guides/continuous-integration.html#Setting-up-CI
-- useCallback https://reactjs.org/docs/hooks-reference.html#usecallback https://reactjs.org/docs/faq-functions.html#arrow-function-in-render
-- React.memo https://ru.reactjs.org/docs/react-api.html#reactmemo
